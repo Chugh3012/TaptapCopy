@@ -15,3 +15,14 @@ You are writing code for a company that builds software to track and invoice for
 The codebase works in its current form, but was originally written by a junior engineer. Refactor the code as you see necessary and add the new billing rule. Make reasonable assumptions and document them.
 
 We will check that your code works, but are more interested in your approach to refactoring, code design, and the decisions you make. We will be asking you about the decisions you made in the next phase of the the interview so be prepared to speak to them.
+
+
+### Solution
+
+To refactor the codebase I did the following:
+- made it very simple;
+- removed a lot of visible boilerplate by using external libraries (ex: Lombok)
+- ensuring one class / one method does only single task and is not jumbled with random information;
+- adding javadoc comments to beginning of each class;
+- created BillUtils class to not store billing information with every customer and de-couple it;
+- Next steps: add unit test
